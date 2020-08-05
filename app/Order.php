@@ -13,6 +13,7 @@ class Order extends Model
         'firstname',
         'lastname',
         'address',
+        'phone',
         'city',
         'state',
         'zip',

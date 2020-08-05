@@ -33,6 +33,7 @@ class PizzaController extends Controller
             'firstname'   => 'required|min:3|max:255',
             'lastname'    => 'required|min:3|max:6',
             'address'     => 'required|min:3|max:1024',
+            'phone'       => 'required|min:3|max:1024',
             'city'        => 'required|min:3|max:1024',
             'clientstate' => 'required|min:3|max:1024',
             'zip'         => 'required|min:3|max:1024',
@@ -51,7 +52,8 @@ class PizzaController extends Controller
         $order->email = $client['email'];    
         $order->firstname = $client['firstname'];    
         $order->lastname = $client['lastname'];      
-        $order->address = $client['address'];    
+        $order->address = $client['address'];         
+        $order->phone = $client['phone'];   
         $order->city = $client['city'];    
         $order->state = $client['clientstate'];    
         $order->zip = $client['zip'];    
